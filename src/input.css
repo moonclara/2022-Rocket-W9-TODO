@@ -29,6 +29,7 @@
     text-decoration: line-through;
     color: #9f9a91;
   }
+  
   .confirm-finished {
     background-image: url(/dist/images/check.svg);
     background-repeat: no-repeat;
