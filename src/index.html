@@ -29,9 +29,9 @@
             <div class="max-w-[500px] mx-auto">
                 <form class="relative mb-4">
                     <input type="text" placeholder="新增待辦事項"
-                        class="todoContent w-full rounded-[10px] text-base px-4 py-[12px] drop-shadow-[0_15px_15px_rgba(0,0,0,0.15)]">
+                        class="addContent w-full rounded-[10px] text-base px-4 py-[12px] drop-shadow-[0_15px_15px_rgba(0,0,0,0.15)]">
                     <button
-                        class="addTodo bg-secondary hover:bg-zinc-700 text-white p-[10px] leading-5 rounded-[10px] w-[40px] h-[40px] absolute top-1 right-1">
+                        class="addBtn bg-secondary hover:bg-zinc-700 text-white p-[10px] leading-5 rounded-[10px] w-[40px] h-[40px] absolute top-1 right-1">
                         <i class="fa-solid fa-plus fa-lg "></i>
                     </button>
                 </form>
@@ -44,22 +44,20 @@
 
                 <div id="list" class="drop-shadow-[0_15px_15px_rgba(0,0,0,0.15)] hidden">
                     <ul id="tabState" class="flex font-bold text-center text-secondaryLight">
-                        <button data-tab
-                            class="tab--active w-full rounded-tl-[10px] bg-white border-b-2 border-b-[#EFEFEF] inline-block py-4"
+                        <button data-tab class="allBtn tab--active w-full rounded-tl-[10px] bg-white border-b-2 border-b-[#EFEFEF] inline-block py-4"
                             href="#" class="" value="全部">全部</button>
-                        <button data-tab class="w-full bg-white border-b-2 border-b-[#EFEFEF] inline-block py-4"
+                        <button data-tab class="yetBtn w-full bg-white border-b-2 border-b-[#EFEFEF] inline-block py-4"
                             href="#" aria-current="page" value="待完成">待完成</button>
-                        <button data-tab
-                            class="w-full rounded-tr-[10px] bg-white border-b-2 border-b-[#EFEFEF] inline-block py-4"
+                        <button data-tab class="doneBtn w-full rounded-tr-[10px] bg-white border-b-2 border-b-[#EFEFEF] inline-block py-4"
                             href="#" value="已完成">已完成</button>
                     </ul>
-                    <ul class="tab__content  bg-white text-secondary text-sm divide-y divide-[#E5E5E5] px-4">
+                    <ul class="list  bg-white text-secondary text-sm divide-y divide-[#E5E5E5] px-4">
 
                     </ul>
                     <div class="bg-white text-secondary text-sm px-4 rounded-b-[10px]">
                         <div class="py-6 flex justify-between border-t border-[#E5E5E5]">
                             <span class="todoNum">0個待完成項目</span>
-                            <a id="delAllTodo" class="text-secondaryLight" href="#">清除已完成項目</a>
+                            <a id="clearBtn" class="text-secondaryLight" href="#">清除已完成項目</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +65,7 @@
         </div>
     </section>
 
-    
+
     <script src="https://kit.fontawesome.com/deb7cdead9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="/js/all.js"></script>
