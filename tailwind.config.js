@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     // 放 extend 裡面 : 自訂顏色
     // 放 extend 外面 : 覆蓋全部顏色
