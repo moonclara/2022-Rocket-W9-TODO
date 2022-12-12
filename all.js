@@ -37,9 +37,9 @@ function renderData() {
   if (position === 1) {
     data.forEach(function (item, index) {
       str += `<li class="pt-6 pb-4 flex space-x-4 ${item.delete}">
-                <a href="#"><img id="checkTodo" class="${item.finished}" data-check="${item.check}" data-num="${index}" data-id="${item.id}" src="/dist/images/checkbox.svg"></a>
+                <a href="#"><img id="checkTodo" class="${item.finished}" data-check="${item.check}" data-num="${index}" data-id="${item.id}" src="./dist/images/checkbox.svg"></a>
                 <div id="todoText" class="grow text-secondary"> ${item.content}</div>
-                <a href="#" class="delTodo" data-id="${item.id}""><img src="/dist/images/delete.svg" class="px-2"></a>
+                <a href="#" class="delTodo" data-id="${item.id}""><img src="./dist/images/delete.svg" class="px-2"></a>
                 </li>`;
       if (item.check === "false") {
         uncompletedNum += 1;
@@ -53,9 +53,9 @@ function renderData() {
     });
     uncompletedData.forEach(function (item, index) {
       str += `<li class="pt-6 pb-4 flex space-x-4 ${item.delete}">
-                <a href="#"><img id="checkTodo" class="${item.finished}" data-check="${item.check}" data-num="${index}" data-id="${item.id}" src="/dist/images/checkbox.svg"></a>
+                <a href="#"><img id="checkTodo" class="${item.finished}" data-check="${item.check}" data-num="${index}" data-id="${item.id}" src="./dist/images/checkbox.svg"></a>
                 <div id="todoText" class="grow text-secondary"> ${item.content}</div>
-                <a href="#" class="delTodo" data-id="${item.id}""><img src="/dist/images/delete.svg" class="px-2"></a>
+                <a href="#" class="delTodo" data-id="${item.id}""><img src="./dist/images/delete.svg" class="px-2"></a>
                 </li>`;
       if (item.check === "false") {
         uncompletedNum += 1;
@@ -69,9 +69,9 @@ function renderData() {
     });
     completedData.forEach(function (item, index) {
       str += `<li class="pt-6 pb-4 flex space-x-4 ${item.delete}">
-                <a href="#"><img id="checkTodo" class="${item.finished}" data-check="${item.check}" data-num="${index}" data-id="${item.id}" src="/dist/images/checkbox.svg"></a>
+                <a href="#"><img id="checkTodo" class="${item.finished}" data-check="${item.check}" data-num="${index}" data-id="${item.id}" src="./dist/images/checkbox.svg"></a>
                 <div id="todoText" class="grow text-secondary"> ${item.content}</div>
-                <a href="#" class="delTodo" data-id="${item.id}""><img src="/dist/images/delete.svg" class="px-2"></a>
+                <a href="#" class="delTodo" data-id="${item.id}""><img src="./dist/images/delete.svg" class="px-2"></a>
                 </li>`;
       if (item.check === "false") {
         uncompletedNum += 1;
